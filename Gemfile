@@ -2,5 +2,6 @@
 
 source "https://rubygems.org"
 
-gem 'fiddle'
+gem 'capybara'
 gem 'cucumber'
+gem 'selenium-webdriver'
