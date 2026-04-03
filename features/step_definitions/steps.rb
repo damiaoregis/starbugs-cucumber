@@ -11,16 +11,10 @@ Dado('que eu estou na página principal da Starbugs') do
   visit 'https://starbugs-qa.vercel.app/'
 end
 
-Dado('que desejo comprar o café {string}') do |product_name|
-  @product_name = product_name
-end
-
-Dado('que esse produto custa {string}') do |product_price|
-  @product_price = product_price
-end
-
-Dado('que o custo do frete é {string}') do |delivery_price|
-  @delivery_price = delivery_price
+Dado('que desejo comprar o seguinte Produto:') do |table|
+  @product_name = table.hashes[0][:Product]
+  @product_price = table.hashes[0][:Price]
+  @delivery_price = table.hashes[0][:Delivery]   
 end
 
 Quando('inicio a compra desse item') do
