@@ -10,10 +10,10 @@ Cenário: Acessar o catálogo de cafés na página principal
 @temp
 Cenário: Iniciar o processo de compra de um café
     Dado que eu estou na página principal da Starbugs
-    E que desejo comprar o seguinte Produto:
-      | Product            | Price    | Delivery |
-      | Expresso Gelado    | R$ 9,99  | R$ 10,00 |
-      | Expresso Cremoso   | R$ 8,99  | R$ 10,00 |
+    E que desejo comprar o seguinte produto:
+      | product  | Expresso Gelado |         
+      | price    | R$ 9,99         |
+      | delivery | R$ 10,00        |
     Quando inicio a compra desse item
     Então devo ver a página de checkout com detahehes do produto
     E o valor total da compra deve ser "R$ 19,99"
