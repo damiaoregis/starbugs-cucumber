@@ -17,11 +17,20 @@ Repositório do projeto de testes automatizados do sistema **Startbugs**, constr
 ## 🤖 Como executar
 
 ### 1. Clonar o repositório
-```bash
+```
 git clone https://github.com/damiaoregis/starbugs-cucumber.git
 cd starbugs-cucumber
-
-###  2. Instalar dependências
-```bash
+```
+### 2. Instalar dependências
+```
 bundle install
+```
+### 3. Executar testes de regressão
+```
+bundle exec cucumber
+```
+## 📚 Observações
+
+Este projeto foi desenvolvido como parte prática do curso Cucumber eXperience.
+Ele serve como base para aplicar conceitos de automação de testes em aplicações web.
 
