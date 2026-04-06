@@ -20,3 +20,8 @@ Repositório do projeto de testes automatizados do sistema **Startbugs**, constr
 ```bash
 git clone https://github.com/damiaoregis/starbugs-cucumber.git
 cd starbugs-cucumber
+
+###  2. Instalar dependências
+```bash
+bundle install
+
