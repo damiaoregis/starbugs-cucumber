@@ -17,7 +17,7 @@ Cenário: Iniciar o processo de compra de um café
     Quando inicio a compra desse item
     Então devo ver a página de checkout com detahehes do produto
     E o valor total da compra deve ser "R$ 19,99"
-@temp
+
 Cenário: Café indisponível
     Dado que eu estou na página principal da Starbugs
      E que desejo comprar o seguinte produto:

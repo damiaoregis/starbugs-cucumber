@@ -14,9 +14,22 @@ class CheckoutPage
       delivery = find('.delivery-price')
       expect(delivery.text).to eql product[:delivery]
     end
-   
-     def assert_total_price(total_price)
+    def search_zipcode(zipcode)
+      find('input[name=cep]').set(zipcode)
+      click_on 'Buscar CEP'
+    end
+    def fill_address(address)
+      find('input[name=number]').set(address[:Numero])
+      find('input[name=complement]').set(address[:Complemento])
+    end
+    def assert_total_price(total_price)
       total = find('.total-price')
       expect(total.text).to eql total_price
+    end
+    def choice_payment(payment_type)
+      find('label div', text: payment_type.upcase).click
+    end
+    def submit
+      click_on 'Confirmar pedido'
     end
 end
