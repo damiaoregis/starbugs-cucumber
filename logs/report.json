@@ -1,0 +1,1131 @@
+[
+  {
+    "id": "catálogo-de-cafés",
+    "uri": "features/catalogo.feature",
+    "keyword": "Funcionalidade",
+    "name": "Catálogo de cafés",
+    "description": "    Como um usuário do site, eu quero acessar o catálogo de cafés na página principal\n    Para que eu possa escolher e saber mais sobre os produtos disponíveis.",
+    "line": 3,
+    "elements": [
+      {
+        "id": "catálogo-de-cafés;acessar-o-catálogo-de-cafés-na-página-principal",
+        "keyword": "Cenário",
+        "name": "Acessar o catálogo de cafés na página principal",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "eu acessar a página principal da Starbugs",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5830726500
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "eu devo ver uma lista de cafés disponíveis",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48971300
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15900
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23200
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216285500
+            }
+          }
+        ]
+      },
+      {
+        "id": "catálogo-de-cafés;iniciar-o-processo-de-compra-de-um-café",
+        "keyword": "Cenário",
+        "name": "Iniciar o processo de compra de um café",
+        "description": "",
+        "line": 11,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu estou na página principal da Starbugs",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 568347000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "que desejo comprar o seguinte produto:",
+            "line": 13,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Expresso Gelado"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "R$ 9,99"
+                ]
+              },
+              {
+                "cells": [
+                  "delivery",
+                  "R$ 10,00"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 657800
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "inicio a compra desse item",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 723806100
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver a página de checkout com detahehes do produto",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 904821900
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "o valor total da compra deve ser \"R$ 19,99\"",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46368100
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173331500
+            }
+          }
+        ]
+      },
+      {
+        "id": "catálogo-de-cafés;café-indisponível",
+        "keyword": "Cenário",
+        "name": "Café indisponível",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu estou na página principal da Starbugs",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 477464400
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "que desejo comprar o seguinte produto:",
+            "line": 23,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Expresso Cremoso"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 130900
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "inicio a compra desse item",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 479796100
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver um popup indicando que o produto está indisponível",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1038581000
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203495700
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cupons",
+    "uri": "features/cupom.feature",
+    "keyword": "Funcionalidade",
+    "name": "Cupons",
+    "description": "    Como um usuário do site Starbugs, eu quero poder aplicar cupons de desconto na página de checkout \n    Para que eu possa obter reduções no preço de produtos, aumentando a satisfação com minha experiência de compra.",
+    "line": 3,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que iniciei o processo de compra do item:",
+            "line": 8,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Café com Leite"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "R$ 19,99"
+                ]
+              },
+              {
+                "cells": [
+                  "delivery",
+                  "R$ 10,00"
+                ]
+              },
+              {
+                "cells": [
+                  "total",
+                  "R$ 29,99"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 917265500
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11500
+            }
+          }
+        ]
+      },
+      {
+        "id": "cupons;aplicar-desconto-de-20%",
+        "keyword": "Cenário",
+        "name": "Aplicar desconto de 20%",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "aplico o seguinte cupom: \"MEUCAFE\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1029195100
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "o valor total da compra deve ser atualizado para \"R$ 25,99\"",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63016900
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172119800
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que iniciei o processo de compra do item:",
+            "line": 8,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Café com Leite"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "R$ 19,99"
+                ]
+              },
+              {
+                "cells": [
+                  "delivery",
+                  "R$ 10,00"
+                ]
+              },
+              {
+                "cells": [
+                  "total",
+                  "R$ 29,99"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 843008700
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9800
+            }
+          }
+        ]
+      },
+      {
+        "id": "cupons;cupom-expirado",
+        "keyword": "Cenário",
+        "name": "Cupom Expirado",
+        "description": "",
+        "line": 19,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "aplico o seguinte cupom: \"PROMO20\"",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 999682600
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver a seguinte notificação: \"Cupom expirado!\"",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46639400
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "o valor total da compra deve permanecer o mesmo",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93721300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188501300
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "",
+        "description": "",
+        "line": 7,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que iniciei o processo de compra do item:",
+            "line": 8,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Café com Leite"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "R$ 19,99"
+                ]
+              },
+              {
+                "cells": [
+                  "delivery",
+                  "R$ 10,00"
+                ]
+              },
+              {
+                "cells": [
+                  "total",
+                  "R$ 29,99"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 854260500
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13500
+            }
+          }
+        ]
+      },
+      {
+        "id": "cupons;cupom-inválido",
+        "keyword": "Cenário",
+        "name": "Cupom Inválido",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "aplico o seguinte cupom: \"PROMO100\"",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1046312400
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver a seguinte notificação: \"Cupom inválido!\"",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78096000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "o valor total da compra deve permanecer o mesmo",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/cupom_step.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60545500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171166900
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pedidos",
+    "uri": "features/pedido.feature",
+    "keyword": "Funcionalidade",
+    "name": "Pedidos",
+    "description": "    Como um usuário do site Starbugs, eu quero selecionar e comprar cafés \n    Para que eu possa receber os produtos em meu endereço e efetuar o pagamento na entrega.",
+    "line": 3,
+    "elements": [
+      {
+        "id": "pedidos;iniciar-o-processo-de-compra-de-um-café",
+        "keyword": "Cenário",
+        "name": "Iniciar o processo de compra de um café",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu estou na página principal da Starbugs",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420309000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "que desejo comprar o seguinte produto:",
+            "line": 10,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Expresso Tradicional"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "R$ 9,99"
+                ]
+              },
+              {
+                "cells": [
+                  "delivery",
+                  "R$ 10,00"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 669500
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "inicio a compra desse item",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 467968500
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver a página de checkout com detahehes do produto",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 921902400
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "o valor total da compra deve ser \"R$ 19,99\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62384400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25800
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171126700
+            }
+          }
+        ]
+      },
+      {
+        "id": "pedidos;café-indisponível",
+        "keyword": "Cenário",
+        "name": "Café indisponível",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu estou na página principal da Starbugs",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 439436700
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "que desejo comprar o seguinte produto:",
+            "line": 21,
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "Expresso Cremoso"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133800
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "inicio a compra desse item",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 372230100
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver um popup indicando que o produto está indisponível",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1013362900
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12500
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203238700
+            }
+          }
+        ]
+      },
+      {
+        "id": "pedidos;compra-bem-sucedida",
+        "keyword": "Cenário",
+        "name": "Compra bem sucedida",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu estou na página principal da Starbugs",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/catalogo_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 446995900
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "que iniciei a compra do item \"Expresso Tradicional\"",
+            "line": 28,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 454661200
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "faço a busca do CEP: \"04534011\"",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1001833900
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "informo os demais dados do endereço:",
+            "line": 30,
+            "rows": [
+              {
+                "cells": [
+                  "Numero",
+                  "1000"
+                ]
+              },
+              {
+                "cells": [
+                  "Complemento",
+                  "Apto 22"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155446400
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "escolho a forma de pagamento \"Cartão de Crédito\"",
+            "line": 33,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187810200
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "por fim finalizo a compra",
+            "line": 34,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203045000
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "sou redirecionado para a página de confirmação do pedido",
+            "line": 35,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21700
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "deve ser informado um prazo de entrega estimado de \"20 min - 30 min\"",
+            "line": 36,
+            "match": {
+              "location": "features/step_definitions/pedido_steps.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138859700
+            }
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12100
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10800
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.40.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188148000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

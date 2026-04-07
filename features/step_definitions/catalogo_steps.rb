@@ -18,7 +18,7 @@ Quando('inicio a compra desse item') do
   @home.buy(@product[:name])
 end
 
-Então('devo ver a página de checkout com detahehes do produto') do
+Então('devo ver a página de checkout com detalhes do produto') do
   @checkout.assert_product_details(@product)
 end
 
